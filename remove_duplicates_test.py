@@ -1,6 +1,7 @@
 from remove_duplicates import ref, dedup
 
 cases = [
+    [],
     [0],
     [1,4,4,4,2,1,1,1],
     [1,1,1,1,1,1]
