@@ -1,7 +1,7 @@
 def show_dup(seq):
 
     ''' 
-        f :: [] -> { a: [], b: [] }
+        f :: [] -> { a: [a, a, a], b: [], c: [c] }
         get unique members of seq. remove each one time from seq, and return object
         with key unique name as key, duplicates as data. 
     '''
