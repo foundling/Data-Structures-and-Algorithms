@@ -1,8 +1,0 @@
-finding duplicate names in array 
-
-sort method
-sort array so two copies are always next to each other. check array[i] against a[i+1].
-
-keep a count on each item. if new count is greater than.
-
-
