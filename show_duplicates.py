@@ -1,11 +1,10 @@
-a = sorted([1,1,1,1,1,1])
-end = len(a)
+def show_dup(seq):
+    ''' return sorted list of unique members of seq. remove each one time from seq, and return seq. '''
 
-if end == 0: 
-    print 0
+    for i in set(seq):
+        seq.pop(seq.index(i))
+    return sorted(seq)
 
-else:
-    duplicates = set([ value for index,value\
-                   in enumerate(a)\
-                   if ((index + 1) < end and value == a[index + 1]) ])
-    print ' '.join(str(m) for m in duplicates)
+
+
+
