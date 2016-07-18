@@ -1,10 +1,15 @@
 def show_dup(seq):
-    ''' return sorted list of unique members of seq. remove each one time from seq, and return seq. '''
 
-    for i in set(seq):
-        seq.pop(seq.index(i))
-    return sorted(seq)
+    ''' 
+        f :: [] -> { a: [], b: [] }
+        get unique members of seq. remove each one time from seq, and return object
+        with key unique name as key, duplicates as data. 
+    '''
 
+    dup_dict = {}
+    for m in set(seq):
+        key = seq.pop(seq.index(m))
+        dup_dict[key] = seq.count(key) 
 
-
+    return dup_dict
 
